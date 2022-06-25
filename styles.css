@@ -1,6 +1,14 @@
                 body{
                 background-color:#444444;
-                }
+		}
+		.block{
+    		background-color: #333;
+    		border: 12px ridge;
+   	 	border-color: #353535;
+   		width: 40%;
+   	 	margin: 15px auto;
+		padding:5px;
+		}
                 .div-one{
                 width:auto;
                 height:auto;
