@@ -63,3 +63,18 @@
                 color:#005500;
                 text-decoration: none;
                 }
+                .wiki-div{
+                background-color: #333;
+                border: 12px ridge;
+                border-color: #353535;
+                width: 80%;
+                margin: auto;
+                }
+                .hr-wiki{
+                width: 95%;
+                margin: auto;
+                color: #232323;
+                background-color: #232323;
+                border-color: #232323;
+                height:5%
+                }
