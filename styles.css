@@ -1,80 +1,131 @@
                 body{
-                background-color:#444444;
-		}
-		.block{
-    		background-color: #333;
-    		border: 12px ridge;
-   	 	border-color: #353535;
-   		width: 40%;
-   	 	margin: 15px auto;
-		padding:5px;
-		}
-                .div-one{
-                width:auto;
-                height:auto;
-                background-color:#222222;
-                }
-                .css-one{
-                color:#005500;
-                font-size:250%;
-                }
-                .div-center{
-                width:75%;
-                height:60%;
-                }
-                .link{
-                text-decoration:none;
-                color:#009900;
-                }
-                .div-middle{
-                width:70%;
-                margin:auto auto;
-                }
-                .div-menu{
-                height:auto;
-                width:auto;
-                }
-                .table{
-                background-color:#222222;
-                border:7px ridge;
-                border-color:#333333;
-                }
-                .middle{
-                background-color:#333333;
-                border:10px ridge;
-                border-color:#353535;
-                width:auto;
-                padding:5px;
-                margin:10px auto;
-                width:80%;
-                }
-                .down-middle{
-                background-color:#333;
-                border: 12px ridge;
-                border-color:#353535;
-                width:40%;
-                margin:15px auto;
-                }
-                .link-two{
-                color:#070;
-                text-decoration:none;
-                }
-                .c-link{
-                color:#005500;
-                text-decoration: none;
-                }
-                .wiki-div{
-                background-color: #333;
-                border: 12px ridge;
-                border-color: #353535;
-                width: 80%;
-                margin: auto;
-                }
-                .hr-wiki{
-                width: 95%;
-                margin: auto;
-                color: #232323;
-                background-color: #232323;
-                border-color: #232323;
-                height:5%
-                }
+    background-color:#444444;
+    font-family: 'Courier New', monospace;
+    color: #00ff00;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.block{
+    background-color: #333;
+    border: 12px ridge;
+    border-color: #353535;
+    width: 40%;
+    margin: 15px auto;
+    padding:5px;
+}
+.div-one{
+    width:auto;
+    height:auto;
+    background-color:#222222;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+.css-one{
+    color:#005500;
+    font-size: 1.5em;
+}
+.div-center{
+    width:75%;
+    height:60%;
+}
+.link{
+    text-decoration:none;
+    color:#009900;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+.link:hover{
+    color:#00ff00;
+    text-shadow: 0 0 5px #00ff00;
+}
+.div-middle{
+    width:70%;
+    margin:auto auto;
+}
+.nav{
+    background-color:#222222;
+    border:7px ridge;
+    border-color:#333333;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+.nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.table{
+    background-color:#222222;
+    border:7px ridge;
+    border-color:#333333;
+}
+.middle{
+    background-color:#333333;
+    border:10px ridge;
+    border-color:#353535;
+    width:80%;
+    padding:20px;
+    margin:20px auto;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+.middle pre{
+    color:#009900;
+    font-size: 1.2em;
+    margin: 0 auto;
+}
+.down-middle{
+    background-color:#333;
+    border: 12px ridge;
+    border-color:#353535;
+    width:60%;
+    margin:20px auto;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+.link-two{
+    color:#070;
+    text-decoration:none;
+}
+.c-link{
+    color:#005500;
+    text-decoration: none;
+}
+.wiki-div{
+    background-color: #333;
+    border: 12px ridge;
+    border-color: #353535;
+    width: 80%;
+    margin: auto;
+}
+.hr-wiki{
+    width: 95%;
+    margin: auto;
+    color: #232323;
+    background-color: #232323;
+    border-color: #232323;
+    height:5%
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .middle, .down-middle, .block {
+        width: 95%;
+    }
+    .css-one {
+        font-size: 1.2em;
+    }
+    .middle pre {
+        font-size: 1em;
+    }
+}
